@@ -3,10 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("Введите ваши целые числа, пожалуйста через пробел.");
+        String [] cn = scanner.nextLine().split(" ");
+        int x = cn.length;
+        int [] cni = new int [x];
+        int sum = 0;
+        for (int i = 0; i<x; i++){
+            cni [i] = Integer.parseInt(cn[i]);
+            sum = sum + cni[i];
+        }
+        System.out.println("Сумма ваших чисел равна " + sum);
         System.out.print("Enter the first number: ");
         int a = scanner.nextInt();
-
         System.out.print("Enter the second number: ");
         int b = scanner.nextInt();
 
@@ -33,6 +41,6 @@ public class Main {
             System.out.println("Cannot divide by zero");
         }
 
-        scanner.close();
+       scanner.close();
     }
 }
