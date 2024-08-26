@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int a = 5;
+        int a = 8;
         int b = 8;
         int c = a + b;
         if( a < b){
